@@ -1,5 +1,5 @@
-$(window).load(function(){
-     $('.preloader').fadeOut('slow');
+$(window).load(function() {
+	$('.preloader').fadeOut('slow');
 });
 
 
@@ -11,7 +11,7 @@ function initializeSite() {
 
 	//OUTLINE DIMENSION AND CENTER
 	(function() {
-	    function centerInit(){
+		function centerInit() {
 
 			var sphereContent = $('.sphere'),
 				sphereHeight = sphereContent.height(),
@@ -19,7 +19,7 @@ function initializeSite() {
 				topMargin = (parentHeight - sphereHeight) / 2;
 
 			sphereContent.css({
-				"margin-top" : topMargin+"px"
+				"margin-top": topMargin + "px"
 			});
 
 			var heroContent = $('.hero'),
@@ -27,12 +27,12 @@ function initializeSite() {
 				heroTopMargin = (parentHeight - heroHeight) / 2;
 
 			heroContent.css({
-				"margin-top" : heroTopMargin+"px"
+				"margin-top": heroTopMargin + "px"
 			});
 
-	    }
+		}
 
-	    $(document).ready(centerInit);
+		$(document).ready(centerInit);
 		$(window).resize(centerInit);
 	})();
 
@@ -44,26 +44,40 @@ function initializeSite() {
 
 /* =Document Ready Trigger
 -------------------------------------------------------------- */
-$(window).load(function(){
+$(window).load(function() {
 
 	initializeSite();
 	(function() {
-		setTimeout(function(){window.scrollTo(0,0);},0);
+		setTimeout(function() {
+			window.scrollTo(0, 0);
+		}, 0);
 	})();
 
 });
 /* END ------------------------------------------------------- */
 
 
-$('#countdown').countdown({
-	date: "December 13, 2017 18:03:26",
-	render: function(data) {
-	  var el = $(this.el);
-	  el.empty()
-	    //.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
-	    .append("<div>" + this.leadingZeros(data.days, 2) + " <span>days</span></div>")
-	    .append("<div>" + this.leadingZeros(data.hours, 2) + " <span>hrs</span></div>")
-	    .append("<div>" + this.leadingZeros(data.min, 2) + " <span>min</span></div>")
-	    .append("<div>" + this.leadingZeros(data.sec, 2) + " <span>sec</span></div>");
-	}
-});
+// $('#countdown').countdown({
+// 	date: "December 13, 2017 18:03:26",
+// 	render: function(data) {
+// 		var el = $(this.el);
+// 		// setInterval(function() {
+// 		// 	console.log("111");
+
+// 		// 	var date = new Date(),
+// 		// 	var sec = date.getMilliseconds();
+// 		// 	el.empty()
+// 		// 		//.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
+// 		// 		.append("<div>" + sec + " <span>days</span></div>")
+// 		// 		.append("<div>" + sec + " <span>hrs</span></div>")
+// 		// 		.append("<div>" + sec + " <span>min</span></div>")
+// 		// 		.append("<div>" + sec + " <span>sec</span></div>");
+// 		// }, 1000);
+// el.empty()
+// 				//.append("<div>" + this.leadingZeros(data.years, 4) + "<span>years</span></div>")
+// 				.append("<div>" + sec + " <span>days</span></div>")
+// 				.append("<div>" + sec + " <span>hrs</span></div>")
+// 				.append("<div>" + sec + " <span>min</span></div>")
+// 				.append("<div>" + sec + " <span>sec</span></div>");
+// 	}
+// });
