@@ -1031,3 +1031,20 @@ h2 {
 		padding: 25px 45px;
 	}
 }
+
+#my_days{
+	display:inline-block;
+	margin: 0 34px;
+}
+#my_hours{
+	display:inline-block;
+	margin: 0 34px;
+}
+#my_mins{
+	display:inline-block;
+	margin: 0 34px;
+}
+#my_secs{
+	display:inline-block;
+	margin: 0 34px;
+}
