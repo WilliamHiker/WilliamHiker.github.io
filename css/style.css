@@ -171,6 +171,16 @@ h2 {
 	margin-top: 10px;
 }
 
+.line2 {
+	display: block;
+	margin: 0 auto;
+	width: 60px;
+	height: 1px;
+	background: #00d9ec;
+	margin-top: 6px;
+	margin-bottom: 10px;
+}
+
 .contact {
 	display: block;
 	width: 100%;
