@@ -29,7 +29,7 @@
 
 		<script src="js/jquery.js"></script>
 	</head>
-	<body>
+	<body class="jq22">
 		<div class="preloader">
 			<div class="loading">
 				<h2>
@@ -55,7 +55,7 @@
 				<li class="layer" data-depth="0.20">
 					<div class="title">
 						<h2>
-							不偏不倚 刚好是你<br /><br />秦老师<br /><br />我好喜欢你
+							你本无意穿堂风 偏偏孤倨引山洪<br /><br />整整一年<br /><br />秦老师 我爱你
 						</h2>
 						<span class="line"></span>
 					</div>
@@ -182,6 +182,16 @@
 				document.getElementById("my_mins").innerHTML = ((mins >= 10) ? mins : ("0" + mins));
 				document.getElementById("my_secs").innerHTML = ((sec >= 10) ? sec : ("0" + sec));
 			}, 1000);
+		</script>
+		<!-- 烟花特效 -->
+		<script type="text/javascript" src="js/jquery.fireworks.js"></script>
+		<script type="text/javascript">
+			$('.jq22').fireworks({ 
+			  sound: false, // sound effect
+			  opacity: 0.2, 
+			  width: '100%', 
+			  height: '100%' 
+			});
 		</script>
 	</body>
 </html>
