@@ -1,0 +1,147 @@
+
+*{
+    margin: 0 ;
+    padding: 0;  
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+/* 如果我们的屏幕超过了 750px  那么我们就按照 750设计稿来走 不会让我们页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+.toolbar{
+    width: 10rem;
+    height: 1.067rem;
+    line-height: 1.067rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.img_back{
+    width: 0.533rem;
+    height: 0.533rem;
+    line-height: 1.067rem;
+}
+
+.title{
+    font-size: 0.373rem;
+    color: #101010;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.img_menu{
+    width: 0.533rem;
+    height: 0.533rem;
+    line-height: 1.067rem;
+    position: absolute;
+    right: 0.267rem;
+}
+
+.line{
+    width: 10rem;
+    height: 0.053rem;
+    background-color: #F0F0F0;
+}
+
+.name_title{
+    color: #101010;
+    font-weight: bold;
+    font-size: 0.373rem;
+    margin-left: 0.426rem;
+    margin-top:0.133rem;
+}
+
+.person_item{
+    margin: 0.107rem 0.427rem;
+    display: flex;
+    justify-content: start;
+}
+.person_header{
+    width: 1.467rem;
+    height: 1.467rem;
+    border-radius: 5rem;
+    margin-right: 0.16rem;
+}
+.persion_name{
+    font-size: 0.373rem;
+    font-weight: bold;
+    color: #101010;
+}
+.person_name_text{
+    font-size: 0.373rem;
+    font-weight: bold;
+    color: #101010;
+}
+.person_name_time{
+    font-size: 0.32rem;
+    color: #F78742;
+    background-color: #FDE2CD;
+    border-radius: 0.08rem;
+    padding: 0.053rem 0.16rem;
+}
+.person_name_other{
+    font-size: 0.373rem;
+    color: #888;
+    margin-top: 0.16rem;
+}
+
+.div_count{
+    display: flex;
+    justify-content: space-around;
+}
+.div_name_count1{
+
+}
+.div_name_count1_1{
+    font-size: 0.32rem;
+    color: #101010;
+}
+.div_name_count1_2{
+    font-size: 0.48rem;
+    font-weight: bold;
+    color: #101010;
+}
+
+.div_pos_title{
+    font-size: 0.32rem;
+    color: #888;
+    margin: 0.107rem 0.427rem;
+}
+
+.pet_div{
+    height: 1.786rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: #eeeeee;
+    border-radius: 0.08rem;
+    margin: 0.107rem 0.427rem;
+    padding: 0.16rem 0.08rem;
+}
+.pet_item{
+    width: 1.467rem;
+    height: 1.467rem;
+    border-radius: 5rem;
+}

@@ -1,0 +1,318 @@
+
+*{
+    margin: 0 ;
+    padding: 0;  
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+/* 如果我们的屏幕超过了 750px  那么我们就按照 750设计稿来走 不会让我们页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+.toolbar{
+    width: 10rem;
+    height: 1.067rem;
+    line-height: 1.067rem;
+    position: relative;
+    background-color: #EC0D0D;
+}
+
+.title{
+    font-size: 0.373rem;
+    color: #fff;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mine_layout{
+}
+.mine_layout_background{
+    width: 10rem;
+    height: 3.21rem;
+    position: relative;
+    z-index: -1;
+}
+.mine_layout_background::after{
+    content: "";
+    width: 140%;
+    height: 3.21rem;
+    position: absolute;
+    left: -20%;
+    top: 0;
+    z-index: -1;
+    border-radius: 0 0 45% 45%;
+    background-color: #EC0D0D;
+}
+.mine_layout_background2{
+    width: 10rem;
+    height: 3.21rem;
+    position: relative;
+    z-index: -1;
+}
+.mine_layout_background2{
+    content: "";
+    width: 80%;
+    height: 1.413rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -0.4rem;
+    z-index: 1;
+    border-radius: 6% 6% 100% 100%;
+    background-color: #000000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 0.08rem;
+}
+.mine_layout_bg2_tip1{
+    font-size: 0.423rem;
+    color: #E3C59E;
+}
+.mine_layout_bg2_tip2{
+    font-size: 0.32rem;
+    color: #958889;
+}
+.mine_layout_bg2_tip3{
+    font-size: 0.373rem;
+    color: #8A6032;
+    background-color: #FCD3AF;
+    border-radius: 5rem;
+    width: 1.84rem;
+    height: 0.56rem;
+    display: inline-block;
+    text-align: center;
+}
+.mine_layout_top{
+    width: 10rem;
+    height: 2.587rem;
+    position: relative;
+}
+.header_pic{
+    width: 1.467rem;
+    height: 1.467rem;
+    border-radius: 5rem;
+    left: 0.64rem;
+    top: 0.16rem;
+    position: absolute;
+}
+.mine_phone{
+    font-size: 0.427rem;
+    color: #fff;
+    position: absolute;
+    left: 2.374rem;
+    top: 0.16rem;
+    font-weight: bold;
+}
+.mine_jifen{
+    font-size: 0.373rem;
+    position: absolute;
+    left: 2.374rem;
+    top: 0.88rem;
+    width: 2.56rem;
+    height: 0.64rem;
+    border-radius: 5rem;
+    border: #fff solid 0.027rem;
+    display: flex;
+    align-items: center;
+}
+.span_jifen{
+    font-size: 0.32rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #F09744;
+    width: 0.613rem;
+    height: 0.613rem;
+    border-radius: 5rem;
+    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.span_jifen_count{
+    font-size: 0.32rem;
+    color: #fff;
+    margin-left: 0.16rem;
+}
+.account_manager_div{
+    position: absolute;
+    right: 0.16rem;
+    top: 30%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: start;
+}
+.account_manager{
+    font-size: 0.32rem;
+    color: #fff;
+}
+.icon_right_round{
+    width: 0.48rem;
+    height: 0.48rem;
+}
+.card_shadow{
+    box-shadow: #ccc 2px 2px 6px;
+    margin-bottom: 0.187rem;
+    border-top: 0;
+    border-radius: 0.18rem;
+}
+.four_item{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 0.64rem;
+    padding-bottom: 0.373rem;
+}
+.four_item_one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.four_item_one_img{
+    width: 1.253rem;
+    height: 1.253rem;
+    border-radius: 5rem;
+    border: #F00 solid 0.027rem;
+}
+.four_item_one_text{
+    font-size: 0.373rem;
+    color: #101010;
+}
+
+.my_self_get_base{
+    position: relative;
+}
+.my_self_get{
+    display: flex;
+    justify-content: space-between;
+    height: 1.013rem;
+    line-height: 1.013rem;
+    padding-left: 0.267rem;
+    padding-right: 0.267rem;
+    background-color: #E6D48C;
+    border-radius: 0.16rem;
+}
+.my_self_get_left{
+    font-size: 0.373rem;
+    color: #917810;
+    font-weight: bold;
+}
+.my_self_get_right{
+    font-size: 0.373rem;
+    color: #101010;
+}
+.my_self_get_bottom{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0.32rem solid #E6D48C;
+    border-top-color: #E6D48C;
+    border-bottom: none;
+    border-left-color: transparent;
+    border-right-color:transparent;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.go_btn{
+    display: flex;
+    margin-top: 0.4rem;
+}
+.go_btn_left{
+    font-size: 0.373rem;
+    color: #EC0D0D;
+    border: #EC0D0D solid 0.08rem;
+    width: 3.573rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: center;
+    display: inline-block;
+    margin-right: 1.49rem;
+}
+.go_btn_right{
+    font-size: 0.373rem;
+    color: #727272;
+    border: #727272 solid 0.08rem   ;
+    width: 3.573rem;
+    height: 1.12rem;
+    line-height: 1.12rem;
+    text-align: center;
+    display: inline-block;
+}
+
+.two_show{
+    display: flex;
+    margin-top: 0.4rem;
+}
+.two_show_item{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-right: 2.08rem;
+}
+.two_show_item_pic{
+    width: 0.64rem;
+    height: 0.64rem;
+}
+.tow_show_item_text{
+    font-size: 0.32rem;
+    color: #101010;
+}
+
+.local{
+    padding: 0.533rem 0.373rem;
+}
+.local_top{
+    font-size: 0.373rem;
+    color: #101010;
+    font-weight: bold;
+}
+.local_bottom{
+    margin-top: 0.213rem;
+    font-size: 0.373rem;
+    color: #101010;
+}
+
+.line{
+    width: 10rem;
+    height: 0.08rem;
+    background-color: #bbb;
+}
+
+.tip{
+    margin: 0 0.64rem;
+    background-color: #F6D0D1;
+    border-radius: 0.16rem;
+    display: flex;
+    justify-content: center;
+    padding: 0.267rem;
+}
+.tip_img{
+    width: 0.64rem;
+    height: 0.64rem;
+}
+.tip_content{
+    font-size: 0.32rem;
+    color: #101010;
+    margin-left: 0.267rem;
+}

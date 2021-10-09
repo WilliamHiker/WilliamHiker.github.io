@@ -1,0 +1,282 @@
+
+*{
+    margin: 0 ;
+    padding: 0;  
+}
+body {
+    min-width: 320px;
+    max-width: 750px;
+    /* flexible 给我们划分了 10 等份 */
+    width: 10rem;
+    margin: 0 auto;
+    padding: 0;
+    line-height: 1.5;
+    font-family: Arial, Helvetica;
+}
+
+a {
+    text-decoration: none;
+    font-size: .333333rem;
+}
+
+/* 如果我们的屏幕超过了 750px  那么我们就按照 750设计稿来走 不会让我们页面超过750px */
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px!important;
+    }
+}
+
+.toolbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.133rem 0.267rem;
+}
+.img_back{
+    width: 0.533rem;
+    height: 0.533rem;
+}
+.div_right{
+
+}
+.img_er_code{
+    width: 0.533rem;
+    height: 0.533rem;
+}
+.img_add_person{
+    width: 0.533rem;
+    height: 0.533rem;
+}
+
+.person_info{
+
+}
+.bg_yellow{
+    background-color: #FFBE5E;
+    height: 2.613rem;
+}
+.ic_header{
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-top: -1.413rem;
+    border-radius: 10rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.name{
+    width: 10rem;
+    text-align: center;
+    margin-top: 1.2rem;
+}
+.span_name{
+    font-size: 0.48rem;
+    color: #323232;
+    font-weight: bold;
+}
+.span_shiming{
+    font-size: 0.267rem;
+    color: #323232;
+    border: #bbb solid 0.027rem;
+    border-radius: 10rem;
+}
+.content{
+    font-size: 0.373rem;
+    color: #101010;
+    text-align: center;
+}
+
+.person_sex_address{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.213rem;
+}
+.sex{
+    font-size: 0.32rem;
+    color: #101010;
+    border-radius: 2rem;
+    background-color: #dfdfdf;
+    padding: 0.107rem 0.267rem ;
+    text-align: center;
+}
+.address{
+    margin-left: 0.213rem;
+    font-size: 0.32rem;
+    color: #101010;
+    border-radius: 2rem;
+    background-color: #dfdfdf;
+    padding: 0.107rem 0.267rem ;
+    text-align: center;
+}
+
+.order_info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 0.373rem;
+}
+.order_huozan{
+    font-size: 0.373rem;
+    color: #101010;
+    font-weight: bold;
+}
+.order_guanzhu{
+    font-size: 0.373rem;
+    color: #101010;
+    font-weight: bold;
+}
+.order_fensi{
+    font-size: 0.373rem;
+    color: #101010;
+    font-weight: bold;
+}
+
+
+.small_line{
+    width: 10rem;
+    height: 0.053rem;
+    background-color: #dfdfdf;
+    margin-top: 0.853rem;
+}
+
+.maybe_know{
+    display: flex;
+    align-items: center ;
+    padding-top: 0.533rem;
+    padding-left: 0.267rem;
+}
+.maybe_know_span{
+    font-size: 0.373rem;
+}
+.person_list{
+    display: flex;
+    align-items: center;
+}
+.person_item{
+    width: 0.747rem;
+    height: 0.747rem;
+    border-radius: 5rem;
+    margin-left: 0.16rem;
+}
+
+.has_pet{
+    display: flex;
+    align-items: center ;
+    padding-top: 0.533rem;
+    padding-left: 0.267rem;
+}
+.has_pet_span{
+    font-size: 0.373rem;
+}
+.has_pet_list{
+    display: flex;
+    align-items: center;
+}
+.has_pet_item_base{
+    margin-left: 0.16rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.has_pet_name{
+    font-size: 0.32rem;
+    display: inline-block;
+    height: 0.533rem;
+    color: #101010;
+    padding-top: 0.107rem;
+}
+.has_pet_item{
+    width: 1.2rem;
+    height: 1.2rem;
+    border-radius: 5rem;
+}
+
+.three_btn{
+    display: flex;
+    justify-content: space-around;
+}
+.btn1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.213rem;
+}
+.btn1_title{
+    font-size: 0.373rem;
+    color: #101010;
+}
+.show_line{
+    height: 0.107rem;
+    width: 2.08rem;
+    background-color: #FF6966;
+    margin-top: 0.107rem;
+}
+.btn2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.213rem;
+}
+.btn2_title{
+    font-size: 0.373rem;
+    color: #101010;
+}
+.not_show_line{
+
+}
+.btn3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0.213rem;
+}
+.btn3_title{
+    font-size: 0.373rem;
+    color: #101010;
+}
+
+.video_list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.video_item{
+    position: relative;
+}
+
+.img_video{
+    width: 3.2rem;
+    height: 4.32rem;
+}
+
+.count_show{
+    width: 100%;
+    opacity: 0.61;
+    background-color: rgba(0, 0, 0, 1);
+    height: 0.88rem;
+    line-height: 0.88rem;
+    position: absolute;
+    left: 0;
+    bottom: 0.266rem;
+    display: flex;
+    align-items: center;
+}
+
+.img_btn_play{
+    width: 0.64rem;
+    height: 0.64rem;
+    margin-left: 0.213rem;
+}
+
+.span_num{
+    font-size: 0.373rem;
+    color: #fff;
+    margin-left: 0.213rem;
+}
+
+.not_has_more{
+    text-align: center;
+    font-size: 0.373rem;
+    color: #101010;
+}
