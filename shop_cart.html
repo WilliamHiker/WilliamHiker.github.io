@@ -17,79 +17,90 @@
 <body>
     <div class="toolbar_title">分类</div>
     <div class="location">
-        <img class="img_location" src="./images/icon_location.png"/>
+        <img class="img_location" src="./images/icon_location.png" />
         <span class="span_location">湖南省长沙市岳麓区嘉顺苑小区</span>
     </div>
 
     <div class="cart">
         <div class="cart_item">
-            <input type="radio" class="cart_radio"/>
-            <img src="./images/pic_default.jpg" class="cart_img"/>
+            <input type="radio" class="cart_radio" />
+            <img src="./images/pic_default.jpg" class="cart_img" />
             <div class="cart_info">
-                <div class="cart_goods_name">散装土鸡蛋  360枚 40斤</div>
+                <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
                 <div class="cart_goods_info">40斤 正负25g</div>
                 <div class="cart_goods_tips">
                     <span class="cart_goods_price">￥28.8</span>
                     <div class="cart_num">
-                        <span class="cart_num_reduce">-</span>
+                        <span class="cart_num_reduce" onclick="reduce(this)">-</span>
                         <span class="cart_num_count">1</span>
-                        <span class="cart_num_plus">+</span>
+                        <span class="cart_num_plus" onclick="add(this)">+</span>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div class="cart_item">
-            <input type="radio" class="cart_radio"/>
-            <img src="./images/pic_default.jpg" class="cart_img"/>
+            <input type="radio" class="cart_radio" />
+            <img src="./images/pic_default.jpg" class="cart_img" />
             <div class="cart_info">
-                <div class="cart_goods_name">散装土鸡蛋  360枚 40斤</div>
+                <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
                 <div class="cart_goods_info">40斤 正负25g</div>
                 <div class="cart_goods_tips">
                     <span class="cart_goods_price">￥28.8</span>
                     <div class="cart_num">
-                        <span class="cart_num_reduce">-</span>
+                        <span class="cart_num_reduce" onclick="reduce(this)">-</span>
                         <span class="cart_num_count">1</span>
-                        <span class="cart_num_plus">+</span>
+                        <span class="cart_num_plus" onclick="add(this)">+</span>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div class="cart_item">
-            <input type="radio" class="cart_radio"/>
-            <img src="./images/pic_default.jpg" class="cart_img"/>
+            <input type="radio" class="cart_radio" />
+            <img src="./images/pic_default.jpg" class="cart_img" />
             <div class="cart_info">
-                <div class="cart_goods_name">散装土鸡蛋  360枚 40斤</div>
+                <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
                 <div class="cart_goods_info">40斤 正负25g</div>
                 <div class="cart_goods_tips">
                     <span class="cart_goods_price">￥28.8</span>
                     <div class="cart_num">
-                        <span class="cart_num_reduce">-</span>
+                        <span class="cart_num_reduce" onclick="reduce(this)">-</span>
                         <span class="cart_num_count">1</span>
-                        <span class="cart_num_plus">+</span>
+                        <span class="cart_num_plus" onclick="add(this)">+</span>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
 
         <div class="cart_item">
-            <input type="radio" class="cart_radio"/>
-            <img src="./images/pic_default.jpg" class="cart_img"/>
+            <input type="radio" class="cart_radio" />
+            <img src="./images/pic_default.jpg" class="cart_img" />
             <div class="cart_info">
-                <div class="cart_goods_name">散装土鸡蛋  360枚 40斤</div>
+                <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
                 <div class="cart_goods_info">40斤 正负25g</div>
                 <div class="cart_goods_tips">
                     <span class="cart_goods_price">￥28.8</span>
                     <div class="cart_num">
-                        <span class="cart_num_reduce">-</span>
+                        <span class="cart_num_reduce" onclick="reduce(this)">-</span>
                         <span class="cart_num_count">1</span>
-                        <span class="cart_num_plus">+</span>
+                        <span class="cart_num_plus" onclick="add(this)">+</span>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     </div>
+
+    <script>
+        function add(obj) {
+            obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 + 1
+        }
+
+        function reduce(obj) {
+            if (obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText !== '1')
+                obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 - 1
+        }
+    </script>
 </body>
 
 </html>

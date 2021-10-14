@@ -16,7 +16,7 @@
 
 <body>
     <div class="toolbar">
-        <img src="./images/icon_back_write.png" class="img_back" />
+        <img src="./images/icon_back_write.png" class="img_back"  onclick="window.history.go(-1)"/>
         <span class="title">确认订单</span>
     </div>
     <div class="location">
@@ -53,9 +53,9 @@
                 <div class="cart_goods_tips">
                     <span class="cart_goods_price">￥28.8</span>
                     <div class="cart_num">
-                        <span class="cart_num_reduce">-</span>
+                        <span class="cart_num_reduce" onclick="reduce(this)">-</span>
                         <span class="cart_num_count">1</span>
-                        <span class="cart_num_plus">+</span>
+                        <span class="cart_num_plus" onclick="add(this)">+</span>
                     </div>
                 </div>
             </div>
@@ -66,6 +66,16 @@
         <img class="tip_img" src="./images/icon_dunpai.png" />
         <span class="tip_content">如您购买的商品有任何问题，请直接与购买门店联系，门店会为您处理，让您售后无忧</span>
     </div>
+    <script>
+        function add(obj) {
+            obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 + 1
+        }
+
+        function reduce(obj) {
+            if (obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText !== '1')
+                obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 - 1
+        }
+    </script>
 </body>
 
 </html>
