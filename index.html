@@ -10,6 +10,11 @@
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/mui.min.css">
     <link rel="stylesheet" href="./css/index.css">
+
+    <link rel="stylesheet" href="./css/business_goods_page.css">
+    <link rel="stylesheet" href="./css/video_call_doctor_all_doctor.css">
+    <link rel="stylesheet" href="./css/shop_cart.css">
+    <link rel="stylesheet" href="./css/person_center.css">
     <!-- 引入我们的flexible.js 文件 -->
     <script src="js/flexible.js"></script>
     <title>Document</title>
@@ -19,124 +24,680 @@
 
 
 
+    <!-- <div class="mui-content">
+        
+    </div> -->
+
     <div class="mui-content">
-        <ul style="background-color: azure;">
-            <li>
-                <img src="./upload/pic1.png" alt="">
-            </li>
-            <li>
-                <a href="pet_staple.html">商城-宠物主粮</a>
-            </li>
-            <li>
-                <a href="pet_normal_staple_detail.html">比瑞吉-小型高龄宠通用粮</a>
-            </li>
-            <li>
-                <a href="goods_comment.html">商品评价</a>
-            </li>
-        </ul>
+        <div id="tabbar1" class="mui-control-content mui-active">
+            <ul style="background-color: azure;">
+                <li>
+                    <img src="./upload/pic1.png" alt="">
+                </li>
+                <li>
+                    <a href="pet_staple.html">商城-宠物主粮</a>
+                </li>
+                <li>
+                    <a href="pet_normal_staple_detail.html">比瑞吉-小型高龄宠通用粮</a>
+                </li>
+                <li>
+                    <a href="goods_comment.html">商品评价</a>
+                </li>
+            </ul>
 
-        <ul style="background-color: blanchedalmond;">
-            <li>
-                <img src="./upload/pic2.png" alt="">
-            </li>
-            <li>
-                <a href="shop_cart.html">购物车</a>
-            </li>
-            <li>
-                <a href="shop_cart_order_create_order.html">订单-创建订单</a>
-            </li>
-            <li>
-                <a href="shop_cart_order_create_order_commit.html">订单-确认订单</a>
-            </li>
-            <li>
-                <a href="shop_cart_online_pay.html">支付-去付款</a>
-            </li>
-            <li>
-                <a href="mine_page.html">我的</a>
-            </li>
-            <li>
-                <a href="mine_order_all.html">订单-全部</a>
-            </li>
-        </ul>
+            <ul style="background-color: blanchedalmond;">
+                <li>
+                    <img src="./upload/pic2.png" alt="">
+                </li>
+                <li>
+                    <a href="shop_cart.html">购物车</a>
+                </li>
+                <li>
+                    <a href="shop_cart_order_create_order.html">订单-创建订单</a>
+                </li>
+                <li>
+                    <a href="shop_cart_order_create_order_commit.html">订单-确认订单</a>
+                </li>
+                <li>
+                    <a href="shop_cart_online_pay.html">支付-去付款</a>
+                </li>
+                <li>
+                    <a href="mine_page.html">我的</a>
+                </li>
+                <li>
+                    <a href="mine_order_all.html">订单-全部</a>
+                </li>
+            </ul>
 
-        <ul style="background-color: coral;">
-            <li>
-                <img src="./upload/pic3.png" alt="">
-            </li>
-            <li>
-                <a href="main_page.html">主页</a>
-            </li>
-            <li>
-                <a href="person_center.html">个人中心</a>
-            </li>
-            <li>
-                <a href="edit_person_info_host_page.html">编辑个人信息（宠主信息）</a>
-            </li>
-            <li>
-                <a href="edit_pet_info.html">编辑宠物信息</a>
-            </li>
-            <li>
-                <a href="pet_document.html">宠物档案（百年）</a>
-            </li>
-            <li>
-                <a href="medicine_add_business.html">药品添加（商家端）</a>
-            </li>
-            <li>
-                <a href="goods_add_business.html">商品添加（商家端）</a>
-            </li>
-        </ul>
+            <ul style="background-color: coral;">
+                <li>
+                    <img src="./upload/pic3.png" alt="">
+                </li>
+                <li>
+                    <a href="main_page.html">主页</a>
+                </li>
+                <li>
+                    <a href="person_center.html">个人中心</a>
+                </li>
+                <li>
+                    <a href="edit_person_info_host_page.html">编辑个人信息（宠主信息）</a>
+                </li>
+                <li>
+                    <a href="edit_pet_info.html">编辑宠物信息</a>
+                </li>
+                <li>
+                    <a href="pet_document.html">宠物档案（百年）</a>
+                </li>
+                <li>
+                    <a href="medicine_add_business.html">药品添加（商家端）</a>
+                </li>
+                <li>
+                    <a href="goods_add_business.html">商品添加（商家端）</a>
+                </li>
+            </ul>
 
-        <ul style="background-color: cornflowerblue;">
-            <li>
-                <img src="./upload/pic4.png" alt="">
-            </li>
-            <li>
-                <a href="business_goods_page.html">商家-商品页</a>
-            </li>
-            <li>
-                <a href="business_service_page.html">商家-服务页</a>
-            </li>
-            <li>
-                <a href="business_pet_page.html">商家-宠物页</a>
-            </li>
-            <li>
-                <a href="business_envirement_page.html">商家-环境页</a>
-            </li>
-            <li>
-                <a href="video_call_doctor_i_want_call.html">我要问诊</a>
-            </li>
-            <li>
-                <a href="video_call_doctor_all_doctor.html">全部医师</a>
-            </li>
-            <li>
-                <a href="video_call_doctor_doctor_introduce.html">医师详情</a>
-            </li>
-        </ul>
+            <ul style="background-color: cornflowerblue;">
+                <li>
+                    <img src="./upload/pic4.png" alt="">
+                </li>
+                <li>
+                    <a href="business_goods_page.html">商家-商品页</a>
+                </li>
+                <li>
+                    <a href="business_service_page.html">商家-服务页</a>
+                </li>
+                <li>
+                    <a href="business_pet_page.html">商家-宠物页</a>
+                </li>
+                <li>
+                    <a href="business_envirement_page.html">商家-环境页</a>
+                </li>
+                <li>
+                    <a href="video_call_doctor_i_want_call.html">我要问诊</a>
+                </li>
+                <li>
+                    <a href="video_call_doctor_all_doctor.html">全部医师</a>
+                </li>
+                <li>
+                    <a href="video_call_doctor_doctor_introduce.html">医师详情</a>
+                </li>
+            </ul>
+        </div>
+
+        <div id="tabbar2" class="mui-control-content">
+            <div class="header">
+                <div class="header_left">
+                    <img src="./images/pic_default.jpg" class="header_img">
+                    <span class="header_img_add">+</span>
+                </div>
+                <div class="header_right">
+                    <div class="header_right_line1">
+                        <span class="header_right_line1_name">完美宠店</span>
+                        <div>
+                            <img src="./images/icon_collect.png" class="header_right_line1_collect" />
+                            <img src="./images/icon_share.png" class="header_right_line1_share" />
+                        </div>
+                    </div>
+                    <div class="header_right_line2">
+                        <span class="header_right_line2_tip1">已认证</span>
+                        <span class="header_right_line2_tip1 header_right_line2_tip1_not1">支持自提</span>
+                        <span class="header_right_line2_tip1 header_right_line2_tip1_not1">24小时</span>
+                        <span class="header_right_line2_tip1 header_right_line2_tip1_not1">服务预约</span>
+                    </div>
+                    <div class="header_right_line3">
+                        <img src="./images/icon_diamond.png" class="header_right_line3_diamond" />
+                        <img src="./images/icon_diamond.png" class="header_right_line3_diamond" />
+                        <img src="./images/icon_diamond.png" class="header_right_line3_diamond" />
+                        <img src="./images/icon_diamond.png" class="header_right_line3_diamond" />
+                        <img src="./images/icon_diamond.png" class="header_right_line3_diamond" />
+                    </div>
+                    <div class="header_right_line4">
+                        <span class="header_right_line4_grey_text">已售</span>
+                        <span class="header_right_line4_red_text">2000</span>
+                        <span class="header_right_line4_grey_text">单 | 好评</span>
+                        <span class="header_right_line4_red_text">1500</span>
+                        <span class="header_right_line4_grey_text">条 | 宠粉</span>
+                        <span class="header_right_line4_red_text">4000</span>
+                        <span class="header_right_line4_grey_text">人</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="time_div">
+                <span class="time_span">营业中 周一至周日 10:00-22:00</span>
+                <div class="time_right">
+                    <img class="img_message" src="./images/icon_message.png" />
+                    <img class="img_phone_book" src="./images/icon_phone_book.png" />
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="address_div">
+                <div class="address_left">
+                    <span class="address_left_text">地址：北京市昌平区天通院</span>
+                    <img src="./images/icon_copy.png" class="address_copy">
+                </div>
+                <img src="./images/icon_local.png" class="address_local">
+            </div>
+
+            <div class="line"></div>
+
+            <div class="business_items_list">
+                <div class="business_service_or_goods_list">
+                    <span class="service_title">服务项目：</span>
+                    <span class="business_service_or_goods_item">美容</span>
+                    <span class="business_service_or_goods_item">寄养</span>
+                    <span class="business_service_or_goods_item">训导</span>
+                    <span class="business_service_or_goods_item">宠物代售</span>
+                    <span class="business_service_or_goods_item">宠物认领</span>
+                </div>
+                <div class="business_service_or_goods_list">
+                    <span class="service_title">主营商品：</span>
+                    <span class="business_service_or_goods_item">主食</span>
+                    <span class="business_service_or_goods_item">零食</span>
+                    <span class="business_service_or_goods_item">营养品</span>
+                    <span class="business_service_or_goods_item">用品</span>
+                    <span class="business_service_or_goods_item">宠物售卖</span>
+                </div>
+            </div>
+
+            <div class="line"></div>
+
+            <div class="btn_four">
+                <div class="btn_goods_btn btn_goods_btn_sel" onclick="window.open('business_goods_page.html','_self')">
+                    <img src="./images/icon_pet.png" class="btn_goods_icon">
+                    <span class="span_btn_goods_name span_btn_goods_name_sel">商 品</span>
+                </div>
+                <div class="btn_goods_btn" onclick="window.open('business_pet_page.html','_self')">
+                    <img src="./images/icon_pet.png" class="btn_goods_icon">
+                    <span class="span_btn_goods_name">宠 物</span>
+                </div>
+                <div class="btn_goods_btn" onclick="window.open('business_service_page.html','_self')">
+                    <img src="./images/icon_pet.png" class="btn_goods_icon">
+                    <span class="span_btn_goods_name">服 务</span>
+                </div>
+                <div class="btn_goods_btn" onclick="window.open('business_envirement_page.html','_self')">
+                    <img src="./images/icon_pet.png" class="btn_goods_icon">
+                    <span class="span_btn_goods_name">环 境</span>
+                </div>
+            </div>
+
+            <div class="bottom_layout_1">
+                <div class="bottom_layout_1_list">
+                    <div class="bottom_layout_1_item_1">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_pic" />
+                        <span class="bottom_layout_1_item_text">宠物主粮</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                </div>
+
+                <div class="bottom_layout_1_list">
+                    <div class="bottom_layout_1_item_1 bottom_layout_1_item_2">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_pic" />
+                        <span class="bottom_layout_1_item_text">宠物零食</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                </div>
+
+                <div class="bottom_layout_1_list">
+                    <div class="bottom_layout_1_item_1 bottom_layout_1_item_3">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_pic" />
+                        <span class="bottom_layout_1_item_text">宠物营养</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                </div>
+
+                <div class="bottom_layout_1_list">
+                    <div class="bottom_layout_1_item_1 bottom_layout_1_item_4">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_pic" />
+                        <span class="bottom_layout_1_item_text">宠物清洁</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                    <div class="bottom_layout_1_item">
+                        <img src="./images/pic_default.jpg" class="bottom_layout_1_item_goods_pic" />
+                        <span class="bottom_layout_1_item_goods_title">#666</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tabbar3" class="mui-control-content">
+            <div class="toolbar_vcdad">
+                <img src="./images/icon_back.png" class="img_back_vcdad" onclick="window.history.go(-1)" />
+                <span class="title_vcdad">全部医师</span>
+                <img src="./images/icon_menu.png" class="img_menu_vcdad" />
+            </div>
+
+            <div class="line_vcdad"></div>
+
+            <div class="search_vcdad">
+                <div class="search_form_base_vcdad">
+                    <img src="./images/icon_searh.png" class="search_form_pic_vcdad" />
+                    <input type="text" class="search_form_input_vcdad" value="输入医师、科室、医院或擅长疾病关键字" />
+                </div>
+            </div>
+
+            <div class="line_vcdad"></div>
+
+            <div class="div_sel_vcdad">
+                <div class="item_left_base_vcdad">
+                    <div class="item_left_vcdad">全部分类<img src="./images/icon_down.png" class="icon_sel_vcdad"></div>
+                    <div class="item_left_vcdad">城市<img src="./images/icon_down.png" class="icon_sel_vcdad"></div>
+                    <div class="item_left_vcdad">默认<img src="./images/icon_down.png" class="icon_sel_vcdad"></div>
+                </div>
+                <div class="item_right_vcdad">筛选<img src="./images/icon_shaixuan.png" class="icon_sel_vcdad"></div>
+            </div>
+
+            <div class="line_vcdad"></div>
+
+            <div>
+                <div class="card_vcdad" onclick="window.open('video_call_doctor_doctor_introduce.html','_self')">
+                    <div class="person_item_vcdad">
+                        <img src="./images/pic_default.jpg" class="person_header_vcdad" />
+                        <div class="persion_name_vcdad">
+                            <span class="person_name_text_vcdad">杨杨 医师</span>
+                            <span class="person_name_time_vcdad">从业6年</span>
+                            <div class="person_name_other_vcdad">主治医生 | 单位 | 所在城市</div>
+                        </div>
+                    </div>
+
+                    <div class="div_count_vcdad">
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">在线诊量</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">满意点赞</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">满意点赞</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                    </div>
+
+                    <div class="div_pos_title_vcdad">
+                        所在医院：
+                    </div>
+                    <div class="div_pos_title_vcdad">
+                        擅长：皮肤病 普内科 普外科 影像学 传染病 骨科 猫科
+                    </div>
+                    <div class="div_wenzhen_vcdad">
+                        <div class="div_wenzhen_item_vcdad">
+                            <span class="div_wenzhen_item_q_vcdad">会员问诊</span>
+                            <span class="div_wenzhen_item_a_vcdad">免费</span>
+                        </div>
+                        <div class="div_wenzhen_item_vcdad">
+                            <span class="div_wenzhen_item_q_vcdad">非会员问诊</span>
+                            <span class="div_wenzhen_item_a_vcdad">10元/次</span>
+                        </div>
+                        <span class="btn_span_wenzhen_vcdad"
+                            onclick="window.open('video_call_doctor_i_want_call.html','_self')">视频问诊</span>
+                    </div>
+                </div>
+
+                <div class="card_vcdad" onclick="window.open('video_call_doctor_doctor_introduce.html','_self')">
+                    <div class="person_item_vcdad">
+                        <img src="./images/pic_default.jpg" class="person_header_vcdad" />
+                        <div class="persion_name_vcdad">
+                            <span class="person_name_text_vcdad">杨杨 医师</span>
+                            <span class="person_name_time_vcdad">从业6年</span>
+                            <div class="person_name_other_vcdad">主治医生 | 单位 | 所在城市</div>
+                        </div>
+                    </div>
+
+                    <div class="div_count_vcdad">
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">在线诊量</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">满意点赞</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                        <div class="div_name_count1_vcdad">
+                            <span class="div_name_count1_1_vcdad">满意点赞</span>
+                            <span class="div_name_count1_2_vcdad">6666</span>
+                        </div>
+                    </div>
+
+                    <div class="div_pos_title_vcdad">
+                        所在医院：
+                    </div>
+                    <div class="div_pos_title_vcdad">
+                        擅长：皮肤病 普内科 普外科 影像学 传染病 骨科 猫科
+                    </div>
+                    <div class="div_wenzhen_vcdad">
+                        <div class="div_wenzhen_item_vcdad">
+                            <span class="div_wenzhen_item_q_vcdad">会员问诊</span>
+                            <span class="div_wenzhen_item_a_vcdad">免费</span>
+                        </div>
+                        <div class="div_wenzhen_item_vcdad">
+                            <span class="div_wenzhen_item_q_vcdad">非会员问诊</span>
+                            <span class="div_wenzhen_item_a_vcdad">10元/次</span>
+                        </div>
+                        <span class="btn_span_wenzhen_vcdad"
+                            onclick="window.open('video_call_doctor_i_want_call.html','_self')">视频问诊</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tabbar4" class="mui-control-content">
+            <div class="toolbar_title">分类</div>
+            <div class="location">
+                <img class="img_location" src="./images/icon_location.png" />
+                <span class="span_location">湖南省长沙市岳麓区嘉顺苑小区</span>
+            </div>
+
+            <div class="cart">
+                <div class="cart_item">
+                    <input type="radio" class="cart_radio" />
+                    <img src="./images/pic_default.jpg" class="cart_img" />
+                    <div class="cart_info">
+                        <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
+                        <div class="cart_goods_info">40斤 正负25g</div>
+                        <div class="cart_goods_tips">
+                            <span class="cart_goods_price">￥28.8</span>
+                            <div class="cart_num">
+                                <span class="cart_num_reduce" onclick="reduce(this)">-</span>
+                                <span class="cart_num_count">1</span>
+                                <span class="cart_num_plus" onclick="add(this)">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_item">
+                    <input type="radio" class="cart_radio" />
+                    <img src="./images/pic_default.jpg" class="cart_img" />
+                    <div class="cart_info">
+                        <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
+                        <div class="cart_goods_info">40斤 正负25g</div>
+                        <div class="cart_goods_tips">
+                            <span class="cart_goods_price">￥28.8</span>
+                            <div class="cart_num">
+                                <span class="cart_num_reduce" onclick="reduce(this)">-</span>
+                                <span class="cart_num_count">1</span>
+                                <span class="cart_num_plus" onclick="add(this)">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_item">
+                    <input type="radio" class="cart_radio" />
+                    <img src="./images/pic_default.jpg" class="cart_img" />
+                    <div class="cart_info">
+                        <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
+                        <div class="cart_goods_info">40斤 正负25g</div>
+                        <div class="cart_goods_tips">
+                            <span class="cart_goods_price">￥28.8</span>
+                            <div class="cart_num">
+                                <span class="cart_num_reduce" onclick="reduce(this)">-</span>
+                                <span class="cart_num_count">1</span>
+                                <span class="cart_num_plus" onclick="add(this)">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart_item">
+                    <input type="radio" class="cart_radio" />
+                    <img src="./images/pic_default.jpg" class="cart_img" />
+                    <div class="cart_info">
+                        <div class="cart_goods_name">散装土鸡蛋 360枚 40斤</div>
+                        <div class="cart_goods_info">40斤 正负25g</div>
+                        <div class="cart_goods_tips">
+                            <span class="cart_goods_price">￥28.8</span>
+                            <div class="cart_num">
+                                <span class="cart_num_reduce" onclick="reduce(this)">-</span>
+                                <span class="cart_num_count">1</span>
+                                <span class="cart_num_plus" onclick="add(this)">+</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="tabbar5" class="mui-control-content">
+            <div class="toolbar">
+                <img src="./images/icon_back.png" class="img_back" onclick="window.history.go(-1)" />
+                <div class="div_right">
+                    <img src="./images/icon_er_code.png" class="img_er_code" />
+                    <img src="./images/icon_add_person.png" class="img_add_person" />
+                </div>
+            </div>
+
+            <div class="person_info">
+                <div class="bg_yellow"></div>
+                <img class="ic_header" src="./images/pic_default.jpg" />
+                <div class="name">
+                    <span class="span_name">欧阳</span>
+                    <span class="span_shiming">未实名</span>
+                </div>
+                <div class="content">填写个人介绍更容易获得关注，点击此处添加</div>
+                <div class="person_sex_address">
+                    <span class="sex">♂ 男</span>
+                    <span class="address">北京市 海淀区</span>
+                </div>
+                <div class="order_info">
+                    <span class="order_huozan">获赞 291.5W</span>
+                    <span class="order_guanzhu">关注 4</span>
+                    <span class="order_fensi">粉丝 68.5W</span>
+                </div>
+            </div>
+
+            <div class="small_line"></div>
+
+            <div class="maybe_know">
+                <span class="maybe_know_span">你可能认识的： </span>
+                <div class="person_list">
+                    <img class="person_item" src="./images/pic_default.jpg" />
+                    <img class="person_item" src="./images/pic_default.jpg" />
+                    <img class="person_item" src="./images/pic_default.jpg" />
+                    <img class="person_item" src="./images/pic_default.jpg" />
+                    <img class="person_item" src="./images/pic_default.jpg" />
+                </div>
+            </div>
+
+            <div class="small_line"></div>
+
+            <div class="has_pet">
+                <span class="has_pet_span">拥有爱宠： </span>
+                <div class="has_pet_list">
+                    <div class="has_pet_item_base" onclick="window.open('pet_document.html','_self')">
+                        <img class="has_pet_item" src="./images/pic_default.jpg" />
+                        <div class="has_pet_name">大黄</div>
+                    </div>
+                    <div class="has_pet_item_base" onclick="window.open('pet_document.html','_self')">
+                        <img class="has_pet_item" src="./images/pic_default.jpg" />
+                        <div class="has_pet_name">大黄</div>
+                    </div>
+                    <div class="has_pet_item_base" onclick="window.open('pet_document.html','_self')">
+                        <img class="has_pet_item" src="./images/pic_default.jpg" />
+                        <div class="has_pet_name">大黄</div>
+                    </div>
+                    <div class="has_pet_item_base" onclick="window.open('pet_document.html','_self')">
+                        <img class="has_pet_item" src="./images/pic_default.jpg" />
+                        <div class="has_pet_name">大黄</div>
+                    </div>
+                    <div class="has_pet_item_base" onclick="window.open('pet_document.html','_self')">
+                        <img class="has_pet_item" src="./images/pic_default.jpg" />
+                        <div class="has_pet_name">大黄</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="small_line"></div>
+
+            <div class="three_btn">
+                <div class="btn1">
+                    <div class="btn1_title">作品 9</div>
+                    <div class="show_line"></div>
+                </div>
+                <div class="btn2">
+                    <div class="btn2_title">动态 910</div>
+                    <div class="not_show_line"></div>
+                </div>
+                <div class="btn3">
+                    <div class="btn3_title">喜欢 211</div>
+                    <div class="not_show_line"></div>
+                </div>
+            </div>
+
+            <div class="video_list">
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+                <div class="video_item">
+                    <img class="img_video" src="./images/pic_default.jpg">
+                    <div class="count_show">
+                        <img src="images/icon_video_play.png" class="img_btn_play" />
+                        <span class="span_num">666</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="not_has_more">
+                暂时没有更多了
+            </div>
+        </div>
     </div>
 
     <nav class="mui-bar mui-bar-tab">
-        <a class="mui-tab-item mui-active" onclick="window.open('main_page.html','_self')">
+        <a class="mui-tab-item mui-active" href="#tabbar1">
             <span class="mui-icon mui-icon-home"></span>
             <span class="mui-tab-label">首页</span>
         </a>
-        <a class="mui-tab-item" onclick="window.open('business_goods_page.html','_self')">
+        <a class="mui-tab-item" href="#tabbar2">
             <span class="mui-icon mui-icon-email"></span>
             <span class="mui-tab-label">宠物</span>
         </a>
-        <a class="mui-tab-item" onclick="window.open('video_call_doctor_all_doctor.html','_self')">
+        <a class="mui-tab-item" href="#tabbar3">
             <span class="mui-icon mui-icon-contact"></span>
             <span class="mui-tab-label">视诊</span>
         </a>
-        <a class="mui-tab-item"  onclick="window.open('shop_cart.html','_self')">
+        <a class="mui-tab-item" href="#tabbar4">
             <span class="mui-icon mui-icon-gear"></span>
             <span class="mui-tab-label">购物车</span>
         </a>
-        <a class="mui-tab-item" onclick="window.open('person_center.html','_self')">
+        <a class="mui-tab-item" href="#tabbar5">
             <span class="mui-icon mui-icon-gear"></span>
             <span class="mui-tab-label">我的</span>
         </a>
     </nav>
     <script src="./js/mui.min.js"></script>
+
+    <script>
+        function add(obj) {
+            obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 + 1
+        }
+
+        function reduce(obj) {
+            if (obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText !== '1')
+                obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText = obj.parentNode.getElementsByClassName("cart_num_count")['0'].innerText - 0 - 1
+        }
+    </script>
 </body>
 
 </html>
